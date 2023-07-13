@@ -1,9 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const testHandler = async (req, res) => {
-    res.send("test successs....");
-};
-router.get("/farmerList", testHandler);
+const addAddressHandler = require("../controllers/addAddressController");
+router.post("/addAddress", addAddressHandler);
 
 module.exports = router;

@@ -7,6 +7,7 @@ const PORT = process.env.PORT;
 const farmerRoutes = require("./routes/vendorRoutes");
 const registrationRoutes = require("./routes/registrationRoutes");
 const loginRoutes = require("./routes/loginRoutes");
+const userRoutes = require("./routes/userRoutes");
 
 
 const app = express();
@@ -27,3 +28,4 @@ app.listen(PORT, () => {
 
 app.use('/signup', registrationRoutes);
 app.use('/login', loginRoutes);
+app.use('/users', userRoutes);
