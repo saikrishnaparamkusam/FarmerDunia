@@ -9,6 +9,7 @@ const registrationRoutes = require("./routes/registrationRoutes");
 const loginRoutes = require("./routes/loginRoutes");
 const userRoutes = require("./routes/userRoutes");
 const categoryRoutes = require("./routes/categoryRoutes");
+const productRoutes = require("./routes/productRoutes");
 
 
 const app = express();
@@ -31,3 +32,5 @@ app.use('/signup', registrationRoutes);
 app.use('/login', loginRoutes);
 app.use('/users', userRoutes);
 app.use('/category', categoryRoutes);
+
+app.use('/product', productRoutes);
